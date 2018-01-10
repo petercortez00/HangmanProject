@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <script src="script.js"></script>
+</head>
+
+<h1> WELCOME TO HANGMAN</h1>
+
+<style>
+    body {
+        background-color: lightblue;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+    }
+
+    p {
+        font-family: verdana;
+        font-size: 50px;
+    }
+
+</style>
+
+<body onload="deleteLetters()">
+<div id="show"></div>
+
+<select id="letters"></select>
+
+
+    <button id="myButton" onclick="startGame()">Start</button>
+
+    <button id="Guess" onclick="guessLetter()">Guess!</button>
+</body>
+
+
+
+<div id="outcome"></div>
+<div id="output"></div>
+<div id="guesses"></div>
+</html>
